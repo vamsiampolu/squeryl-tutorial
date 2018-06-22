@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/localuser/Do/squeryl-tutorial/src/main/scala/example/Main.scala:17:13: value work is not a member of org.squeryl.Session[0m
+[0m[[0m[31merror[0m] [0m[0m    session.work {[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/localuser/Do/squeryl-tutorial/src/main/scala/example/Playlist.scala:41:19: value key is not a member of org.squeryl.dsl.Measures[Long][0m
+[0m[[0m[31merror[0m] [0m[0m        where(sca.key === a.id)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
