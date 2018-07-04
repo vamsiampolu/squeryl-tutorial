@@ -1,13 +1,12 @@
 package example
 
-import org.squeryl.PrimitiveTypeMode._
-import org.squeryl.adapters.H2Adapter
-import org.squeryl.{Session, KeyedEntity, Schema}
+import org.squeryl.PrimitiveTypeMode
+
 
 class Playlist(
   var name: String,
   var path: String
-) extends MusicDbObject {
+) extends MusicDbObject with PrimitiveTypeMode {
   import MusicDb._
 
   def songsInPlaylistOrder = from(playlistElements, songs) { (ple, songs) => {

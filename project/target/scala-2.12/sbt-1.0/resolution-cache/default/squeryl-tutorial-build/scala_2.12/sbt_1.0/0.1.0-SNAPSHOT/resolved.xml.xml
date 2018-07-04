@@ -4,7 +4,7 @@
 		module="squeryl-tutorial-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180621173157"
+		publication="20180624214451"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

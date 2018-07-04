@@ -1,14 +1,13 @@
 package example
 
-import org.squeryl.PrimitiveTypeMode._
-import org.squeryl.adapters.H2Adapter
-import org.squeryl.{Session, KeyedEntity, Schema}
+import org.squeryl.PrimitiveTypeMode
+
 
 class Song(
   var title: String,
   var artistId: Long,
   var filePath: Option[String]
-) extends MusicDbObject {
+) extends MusicDbObject with PrimitiveTypeMode {
   def this() = this("", 0, Some(""))
 
   import MusicDb._

@@ -1,10 +1,9 @@
 package example
 
-import org.squeryl.PrimitiveTypeMode._
 import org.squeryl.adapters.H2Adapter
-import org.squeryl.{Session, KeyedEntity, Schema}
+import org.squeryl.{KeyedEntity, PrimitiveTypeMode, Schema, Session}
 
-object Main extends App {
+object Main extends App with PrimitiveTypeMode {
   import MusicDb._
 
   Class.forName("org.h2.Driver")
@@ -13,7 +12,11 @@ object Main extends App {
     new H2Adapter
   )
 
-  try {
+  transaction {
+     test
+  }
+
+  /*try {
     session.work {
       test
       session.connection.commit
@@ -21,6 +24,7 @@ object Main extends App {
   } catch {
     case e: Exception => session.connection.rollback
   }
+  */
 
   def test = {
     val herbyHancock = artists.insert(new Artist("Herby Hancock"))

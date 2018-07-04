@@ -1,7 +1,19 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/localuser/Do/squeryl-tutorial/src/main/scala/example/Main.scala:17:13: value work is not a member of org.squeryl.Session[0m
-[0m[[0m[31merror[0m] [0m[0m    session.work {[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/localuser/Do/squeryl-tutorial/src/main/scala/example/Playlist.scala:41:19: value key is not a member of org.squeryl.dsl.Measures[Long][0m
+[0m[[0m[31merror[0m] [0m[0m/Users/localuser/Do/squeryl-tutorial/src/main/scala/example/EntryPoint.scala:32:21: overloaded method value insert with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (e: Iterable[example.Song])Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (t: example.Song)example.Song[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (example.EntryPoint.Song)[0m
+[0m[[0m[31merror[0m] [0m[0m      MusicDb.songs.insert([0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/localuser/Do/squeryl-tutorial/src/main/scala/example/EntryPoint.scala:63:24: overloaded method value insert with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (e: Iterable[example.PlaylistElement])Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (t: example.PlaylistElement)example.PlaylistElement[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (example.EntryPoint.PlaylistElement)[0m
+[0m[[0m[31merror[0m] [0m[0m      playlistElements.insert(new PlaylistElement(nextSongNumber, id, s.id))[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/localuser/Do/squeryl-tutorial/src/main/scala/example/EntryPoint.scala:78:19: value key is not a member of org.squeryl.dsl.Measures[Long][0m
 [0m[[0m[31merror[0m] [0m[0m        where(sca.key === a.id)[0m
 [0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/localuser/Do/squeryl-tutorial/src/main/scala/example/Playlist.scala:40:19: value key is not a member of org.squeryl.dsl.Measures[Long][0m
+[0m[[0m[31merror[0m] [0m[0m        where(sca.key === a.id)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
